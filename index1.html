@@ -16,9 +16,13 @@
 
     <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+   
     <title>越南景點介紹</title>
 
-
+    <script type=”text/javascript” src=”https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <link rel=”stylesheet” type=”text/css” href=”https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel=”stylesheet” type=”text/css” href=”https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
 
 
 <style>
@@ -34,7 +38,10 @@
 
     #p1{
         background-image: url(im/4.jpg);
-        max-width: 100%;
+        background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
 
     }
 
@@ -43,9 +50,10 @@
         max-width: 100%;
 
     }
+    
 
 
-    </style>
+ </style>
 
 </head>
 
@@ -58,8 +66,6 @@
             <h1>越南旅遊景點介紹</h1>
 
         </div>
-
-
 <div id="bg">
 <div role="main" class="ui-content">    
   
@@ -120,7 +126,7 @@
     </div>
 
 <!--天氣-->
-
+<!--天氣側目路-->
 <div data-role="page" id="p1">
     
     <div data-role="panel" id="myPanel">
@@ -140,76 +146,35 @@
 
 
     
-    
+  <!--天氣內容-->  
     <div id="p1">
-    <div data-role="main" class="ui-content">
+    
         <div data-role="header">
-             
+           
             <h1>氣候資訊</h1>
-               
-        <a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bullets ui-btn-icon-notext"></a>
+          
+                <img src="im/6.jpg">
+                   
+        <a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>   
+      
+      
+</div>   
 
-
-    <img src="im/line_2261432967594.jpg">             
+<div data-role="main" class="ui-content">   
     <ul data-role="listview" data-inset="true">
-    
-        <ul data-role="listview" data-inset="true">
+                
+                  <a href="#" class="ui-btn ui-icon-bars ui-btn-icon-left">链接</a>
+                  <button class="ui-btn ui-icon-bars ui-btn-icon-left">按钮</button>
+                
+         
+
+
+
             
-            <li><a href="#p1">
-            <img src="im/clouds-and-sun.png">
-            <h2>天氣資訊</h2>
-            <p>大叻地處1500米，山上空氣涼爽，沒有平地那麼悶熱，一天的春夏秋冬</p>
-            </a></li>
-        
-        
-            <li><a href="#">
-            <img src="im/placeholder (4).png">
-            <h2>旅遊景點推薦</h2>
-            <p>Hot Chip</p></a>
-            </li>
-        
-        
-            <li><a href="#">
-                <img src="im/eating.png">
-            <h2>當地知名美食推薦</h2>
-            <p>Phoenix</p></a>
-            </li>
-            <li><a href="#">
-                <img src="im/scroll.png">
-            <h2>當地文化介紹</h2>
-            <p>Phoenix</p></a>
-            </li>
-            <li><a href="#">
-                <img src="im/youtube.png">
-            <h2>影片介紹</h2>
-            <p>Phoenix</p></a>
-            </li>
-
-            <li><a href="#">
-                <img src="im/search.png">
-            <h2>關於我們</h2>
-            <p>Phoenix</p></a>
-            </li>
-        </ul>
-
-    
-
-
-
-
-
+    </div>   
 
 
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-    </div>
 
 
 
