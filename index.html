@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 
    
-
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Pacifico&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
     <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -27,9 +27,17 @@
     <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css">
     <link rel="stylesheet" href="themes/ruby.css">                       
     <link rel="stylesheet" href="themes/ruby.min.css">
-
+    <link rel="icon" href="im/11111.png" sizes="60x60" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="im/1602594588.ico">
 
 <style>
+   .ui-body-c, .ui-header {
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+    .ui-footer {
+        font-family: 'Pacifico', cursive;
+    }
+
     #home img{
         max-width: 100%;
         
@@ -38,6 +46,7 @@
     #bg{
         background-image:url(im/2.jpg);
         max-width: 100%;
+        
     }
 
     #p1{
@@ -46,6 +55,7 @@
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
+        
 
     }
 
@@ -215,17 +225,85 @@ main {
         background-size: cover;}
 
 
-
-
-
-
-
-.ui-body-c, .ui-header {
-        font-family: 'Noto Sans TC', sans-serif;
+#p3
+{
+    background-image: url(im/79.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
 }
-.ui-footer {
-        font-family: 'Pacifico', cursive;
+
+
+
+
+
+#aa img{
+    max-width: 100%;
+    display: block;
 }
+
+#p3a {
+    background-image: url(im/81.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        }
+
+#p3a img{
+    max-width: 100%;
+
+}
+
+#p3pp {
+    background-image: url(im/81.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+}
+#p3b img{
+    max-width: 100%;
+
+}
+
+#p4pp {
+    background-image: url(im/92.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+}
+#p3c img{
+    max-width: 100%;
+
+}
+
+#p5pp {
+    background-image: url(im/94.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+}
+.video-wrapper{
+        position: relative;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        height: 100%;
+    }
+
+
+  
+
 
  </style>
 
@@ -241,7 +319,7 @@ main {
 
         <div data-role="header" data-position="fixed" data-tap-toggle="false">
 
-            <h1>越南旅遊景點介紹</h1>
+            <h1>越南-大叻</h1>
 
         </div>
 <div id="bg">
@@ -262,26 +340,26 @@ main {
                 <li><a href="#p2">
                 <img src="im/placeholder (4).png">
                 <h2>旅遊景點推薦</h2>
-                <p>Hot Chip</p></a>
+                <p>必去景點</p></a>
                 </li>
             
             
-                <li><a href="#">
+                <li><a href="#p3">
                     <img src="im/eating.png">
                 <h2>當地知名美食推薦</h2>
-                <p>Phoenix</p></a>
+                <p>當地知名美食推薦</p></a>
                 </li>
               
-                <li><a href="#">
+                <li><a href="#p4">
                     <img src="im/youtube.png">
                 <h2>影片介紹</h2>
-                <p>Phoenix</p></a>
+                <p>旅遊介紹影片解說</p></a>
                 </li>
 
-                <li><a href="#">
+                <li><a href="#p5">
                     <img src="im/search.png">
                 <h2>關於我們</h2>
-                <p>Phoenix</p></a>
+                <p>關於我們</p></a>
                 </li>
             </ul>
 
@@ -313,19 +391,20 @@ main {
            
             <li data-icon="false"><a href="#Map">交通與住宿</a></li>
             <li data-icon="false"><a href="https://www.accuweather.com/zh/vn/da-lat/354287/current-weather/354287">大叻當地氣候</a></li>
-            <li data-role="list-divider">亚洲</li>
-            <li data-icon="false"><a href="#">當地知名美食推薦</a></li>
+            <li data-role="list-divider">大叻好吃又好玩</li>
+            <li data-icon="false"><a href="#p2">當地知名景點推薦</a></li>
+            <li data-icon="false"><a href="#p3">當地知名美食推薦</a></li>
             
-            <li data-role="list-divider">子</li>
-            <li data-icon="false"><a href="#">當地文化介紹</a></li>
-            <li data-icon="false"><a href="#">影片介紹</a></li>
-            <li data-icon="false"><a href="#">關於我們</a></li>
+            <li data-role="list-divider">其他</li>
+            
+            <li data-icon="false"><a href="#p4">影片介紹</a></li>
+            <li data-icon="false"><a href="#p5">關於我們</a></li>
         </ul>
     </div>
 
     <script>
         $("#pageone").on("swiperight",function(){
-            //向右滑动，显示面板
+           
             $("#myPanel").panel("open");
         });
     </script>
@@ -338,9 +417,9 @@ main {
         <div data-role="header">
            
             <h1>大叻旅遊之相關資訊</h1>
-            
+            <div id="aa">
                 <img src="im/6.jpg">
-                   
+               </div>    
         <a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>   
       
     </div>
@@ -390,7 +469,7 @@ main {
          </div>  
        
 
-<a href="#Map" class="ui-btn ui-btn-icon-left ui-btn ui-icon-bars" data-transition="slide">交通與住宿</a> 
+<a href="#Map" class="ui-btn ui-btn-icon-left ui-btn ui-icon-bars ui-corner-all" data-transition="slide">交通與住宿</a> 
 
                 
    
@@ -445,17 +524,18 @@ main {
 <!--交通與住宿-->
 <div data-role="page" id="Map">
 
-    <div data-role="header">
+    <div data-role="header"data-position="fixed" data-tap-toggle="false">
+      
         <a href="#p1" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">返回</a>
         <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
         <h1>交通與住宿</h1>
 
     </div><!-- /header -->
 
-    <div role="main" class="ui-content">
+    <div role="main" class="ui-content ">
        
       
-        <div id="map"></a>
+        <div id="map">
           <div role="main" class="ui-content">    
   
 
@@ -574,13 +654,14 @@ main {
           
             <li data-icon="false"><a href="#Map">交通與住宿推薦</a></li>
             <li data-icon="false"><a href="https://www.accuweather.com/zh/vn/da-lat/354287/current-weather/354287">大叻當地氣候</a></li>
-            <li data-role="list-divider">當地知名美食推薦</li>
-            <li data-icon="false"><a href="#">當地知名美食推薦</a></li>
+            <li data-role="list-divider">大叻好吃又好玩</li>
+            <li data-icon="false"><a href="#p2">當地知名景點推薦</a></li>
+            <li data-icon="false"><a href="#p3">當地知名美食推薦</a></li>
             
-            <li data-role="list-divider">子</li>
+            <li data-role="list-divider">其他</li>
            
-            <li data-icon="false"><a href="#">影片介紹</a></li>
-            <li data-icon="false"><a href="#">關於我們</a></li>
+            <li data-icon="false"><a href="#p4">影片介紹</a></li>
+            <li data-icon="false"><a href="#p5">關於我們</a></li>
         </ul>
     </div>
 
@@ -669,9 +750,9 @@ main {
             <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
                 <div data-role="navbar"> 
                      <ul> 
-                      <li><a href="#a11" data-icon="custom">Garnet Cellar酒莊</a></li> 
-                      <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
-                      <li><a href="#a2" data-icon="custom">大叻火車站</a></li> 
+                      <li><a href="#a11" data-icon="arrow-l"data-icon="custom">Garnet Cellar酒莊</a></li> 
+                     
+                      <li><a href="#a2" data-icon="arrow-r"data-icon="custom">大叻火車站</a></li> 
                      </ul> 
                     </div>   
 
@@ -690,6 +771,9 @@ main {
 <!--大叻火車站--> 
 <div data-role="page" id="a2">
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#p2" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到必去景點</a>
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+
         <h1>大叻火車站</h1>
        </div> 
 
@@ -727,9 +811,9 @@ main {
        <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
            <div data-role="navbar"> 
                 <ul> 
-                 <li><a href="#a1" data-icon="custom">瘋狂屋</a></li> 
-                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
-                 <li><a href="#a3" data-icon="custom">Me Linh Coffee Garden</a></li> 
+                 <li><a href="#a1" data-icon="arrow-l"data-icon="custom">瘋狂屋</a></li> 
+                 
+                 <li><a href="#a3" data-icon="arrow-r"data-icon="custom">Me Linh Coffee Garden</a></li> 
                 </ul> 
                </div>   
 
@@ -745,6 +829,9 @@ main {
 <!--咖啡豆花園--> 
 <div data-role="page" id="a3">
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#p2" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到必去景點</a>
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+
         <h1>Me Linh Coffee Garden</h1>
        </div> 
 
@@ -789,9 +876,9 @@ main {
        <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
            <div data-role="navbar"> 
                 <ul> 
-                 <li><a href="#a2" data-icon="custom">大叻火車站</a></li> 
-                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
-                 <li><a href="#a4" data-icon="custom">春香湖</a></li> 
+                 <li><a href="#a2" data-icon="arrow-l"data-icon="custom">大叻火車站</a></li> 
+               
+                 <li><a href="#a4" data-icon="arrow-r"data-icon="custom">春香湖</a></li> 
                 </ul> 
                </div>   
 
@@ -807,6 +894,9 @@ main {
  <!--春香胡--> 
 <div data-role="page" id="a4">
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#p2" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到必去景點</a>
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+
         <h1>春香胡</h1>
        </div> 
 
@@ -866,9 +956,9 @@ main {
        <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
            <div data-role="navbar"> 
                 <ul> 
-                 <li><a href="#a3" data-icon="custom">Me Linh Coffee Garden</a></li> 
-                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
-                 <li><a href="#a5" data-icon="custom">大象瀑布</a></li> 
+                 <li><a href="#a3"data-icon="arrow-l" data-icon="custom">Me Linh Coffee Garden</a></li> 
+            
+                 <li><a href="#a5" data-icon="arrow-r"data-icon="custom">大象瀑布</a></li> 
                 </ul> 
                </div>   
 
@@ -885,6 +975,9 @@ main {
 <!--達坦拉瀑布--> 
 <div data-role="page" id="a5">
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#p2" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到必去景點</a>
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+
         <h1>大象瀑布</h1>
        </div> 
 
@@ -929,9 +1022,9 @@ main {
        <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
            <div data-role="navbar"> 
                 <ul> 
-                 <li><a href="#a2" data-icon="custom">大叻火車站</a></li> 
-                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
-                 <li><a href="#a6" data-icon="custom">Garnet Cellar酒莊</a></li> 
+                 <li><a href="#a2" data-icon="arrow-l"data-icon="custom">大叻火車站</a></li> 
+               
+                 <li><a href="#a6" data-icon="arrow-r"data-icon="custom">Garnet Cellar酒莊</a></li> 
                 </ul> 
                </div>   
 
@@ -951,6 +1044,9 @@ main {
 <!--Garnet Cellar酒莊--> 
 <div data-role="page" id="a6">
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#p2" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到必去景點</a>
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+
         <h1>Garnet Cellar酒莊</h1>
        </div> 
 
@@ -995,9 +1091,9 @@ main {
        <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
            <div data-role="navbar"> 
                 <ul> 
-                 <li><a href="#a5" data-icon="custom">大象瀑布</a></li> 
-                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
-                 <li><a href="#a7" data-icon="custom">Stairway To Heaven</a></li> 
+                 <li><a href="#a5" data-icon="arrow-l"data-icon="custom">大象瀑布</a></li> 
+                
+                 <li><a href="#a7" data-icon="arrow-r"data-icon="custom">Stairway To Heaven</a></li> 
                 </ul> 
                </div>   
 
@@ -1013,6 +1109,9 @@ main {
 <!--Stairway To Heaven--> 
 <div data-role="page" id="a7">
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#p2" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到必去景點</a>
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+
         <h1>Stairway To Heaven</h1>
        </div> 
 
@@ -1055,9 +1154,9 @@ main {
        <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
            <div data-role="navbar"> 
                 <ul> 
-                 <li><a href="#a6" data-icon="custom">Garnet Cellar酒莊</a></li> 
-                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
-                 <li><a href="#a8" data-icon="custom">Tunnel Clay泥雕公園</a></li> 
+                 <li><a href="#a6" data-icon="arrow-l"data-icon="custom">Garnet Cellar酒莊</a></li> 
+                
+                 <li><a href="#a8" data-icon="arrow-r"data-icon="custom">Tunnel Clay泥雕公園</a></li> 
                 </ul> 
                </div>   
 
@@ -1073,6 +1172,9 @@ main {
 <!--Tunnel Clay泥雕公園--> 
 <div data-role="page" id="a8">
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#p2" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到必去景點</a>
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+
         <h1>Tunnel Clay泥雕公園</h1>
        </div> 
 
@@ -1119,9 +1221,9 @@ main {
        <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
            <div data-role="navbar"> 
                 <ul> 
-                 <li><a href="#a7" data-icon="custom">Stairway To Heaven</a></li> 
-                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
-                 <li><a href="#a9" data-icon="custom">浪平山</a></li> 
+                 <li><a href="#a7" data-icon="arrow-l"data-icon="custom">Stairway To Heaven</a></li> 
+                
+                 <li><a href="#a9" data-icon="arrow-r"data-icon="custom">浪平山</a></li> 
                 </ul> 
                </div>   
 
@@ -1141,6 +1243,9 @@ main {
 <!--浪平山--> 
 <div data-role="page" id="a9">
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#p2" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到必去景點</a>
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+
         <h1>浪平山</h1>
        </div> 
 
@@ -1187,9 +1292,9 @@ main {
        <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
            <div data-role="navbar"> 
                 <ul> 
-                 <li><a href="#a8" data-icon="custom">Tunnel Clay泥雕公園</a></li> 
-                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
-                 <li><a href="#a10" data-icon="custom">大叻花園</a></li> 
+                 <li><a href="#a8" data-icon="arrow-l"data-icon="custom">Tunnel Clay泥雕公園</a></li> 
+                
+                 <li><a href="#a10" data-icon="arrow-r"data-icon="custom">大叻花園</a></li> 
                 </ul> 
                </div>   
 
@@ -1208,6 +1313,9 @@ main {
 <!--大叻花園--> 
 <div data-role="page" id="a10">
     <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#p2" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到必去景點</a>
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+
         <h1>大叻花園</h1>
        </div> 
 
@@ -1252,9 +1360,236 @@ main {
        <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
            <div data-role="navbar"> 
                 <ul> 
-                 <li><a href="#a9" data-icon="custom">浪平山</a></li> 
-                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
-                 <li><a href="#a1" data-icon="custom">瘋狂屋</a></li> 
+                 <li><a href="#a9" data-icon="arrow-l"data-icon="custom">浪平山</a></li> 
+                
+                 <li><a href="#a1" data-icon="arrow-r"data-icon="custom">瘋狂屋</a></li> 
+                </ul> 
+               </div>   
+
+               </div>
+         </div> 
+           </div>
+</div>
+
+
+</div>
+</div>
+
+
+<!--美食-->
+<div data-role="page" id="p3">
+    
+    <div data-role="panel" id="myPanel">
+        <h2>目錄</h2>
+        <ul data-role="listview">
+            
+            <li data-icon="false"><a href="#home">回首頁</a></li>
+            <li data-role="list-divider">大叻旅遊之相關資訊</li>
+            <li data-icon="false"><a href="#p1">大叻簡介</a></li>
+            <li data-icon="false"><a href="#p1">旅遊最佳時間</a></li>
+           
+            <li data-icon="false"><a href="#Map">交通與住宿</a></li>
+            <li data-icon="false"><a href="https://www.accuweather.com/zh/vn/da-lat/354287/current-weather/354287">大叻當地氣候</a></li>
+            <li data-role="list-divider">大叻好吃又好玩</li>
+            <li data-icon="false"><a href="#p2">當地知名景點推薦</a></li>
+            <li data-icon="false"><a href="#p3">當地知名美食推薦</a></li>
+            
+            <li data-role="list-divider">其他</li>
+            
+            <li data-icon="false"><a href="#p4">影片介紹</a></li>
+            <li data-icon="false"><a href="#p5">關於我們</a></li>
+        </ul>
+    </div>
+
+    <script>
+        $("#pageone").on("swiperight",function(){
+            //向右滑动，显示面板
+            $("#myPanel").panel("open");
+        });
+    </script>
+    
+  <!--美食內容-->  
+  
+    <div id="p3aa">
+      
+
+        <div data-role="header">
+           
+            <h1>當地知名美食推薦</h1>
+            <div id="aa">
+               
+               </div>    
+        <a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>   
+      
+    </div>
+
+
+            
+      
+      
+   
+
+        <div role="main" class="ui-content">    
+
+           
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="#p3a" class="ui-btn ui-btn-icon-left ui-btn ui-icon-bars ui-corner-all" data-transition="slide">越式法國麵包</a> 
+            <br>
+            <a href="#p3b" class="ui-btn ui-btn-icon-left ui-btn ui-icon-bars ui-corner-all" data-transition="slide">大叻火鍋</a> 
+            <br>
+        <a href="#p3c" class="ui-btn ui-btn-icon-left ui-btn ui-icon-bars ui-corner-all" data-transition="slide">牛肉河粉</a> 
+        </br>
+        </br>
+    </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+            </div> 
+           
+            </div>
+</div>  
+</div>
+
+ </div>
+
+
+
+<!--麵包--> 
+<div data-role="page" id="p3a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#p3" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到美食推薦</a>
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+
+        <h1>越式法國麵包</h1>
+       </div> 
+
+       <div id="p3pp">
+         
+        <main>
+           <div role="main" class="ui-content">
+        <div id="w">
+            <blockquote>
+            <img src="im/87.jpeg"> 
+            <br>
+            <img src=""><br>
+            <img src="">
+            早餐、下午茶、宵夜必吃的越式法國麵包，也叫作越式三明治！單單是聽名字就覺得很特別，這是一款融合了越式和法式風味的麵包，麵包烤得外酥內軟，配上牛肉、火腿、雞蛋、蔬菜等，滿滿的餡料絕對會滿足你的味蕾！            </br>
+            </br>
+            <img src="im/89.jpg"><br>
+            <img src=""><br>
+            是一種具東南亞色彩的法國麵包，雖然在國際上常被當成越南特色菜，但此食品廣泛流行於前中南半島等地區，在越南、柬埔寨、寮國和香港均為日常食品。製作該麵包時，除了用麵粉外，亦會加入米粉，質感相對較脆，也較傳統法包為輕。
+            <br>
+            當地人食用時，常常加入帶甜酸味的白紅蘿蔔絲醃菜、新鮮黃瓜、芫荽、辣椒，塗以豬肝醬、奶油，加入不同肉片，但多數不用起司，通常當作早餐、小吃或宵夜。
+            
+     
+        </br>
+              </br>
+             <br> <img src="">
+              <img src="">
+              
+              <br> 
+              <img src="">
+            
+                </div>
+            </br>
+              </br>
+
+                
+                                      
+                           
+           
+           </blockquote> 
+   
+
+      <div role="main" class="ui-content">          
+       <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
+           <div data-role="navbar"> 
+                <ul> 
+                 <li><a href="#p3c" data-icon="arrow-l"data-icon="custom">牛肉河粉</a></li> 
+                
+                 <li><a href="#p3b" data-icon="arrow-r"data-icon="custom">大叻火鍋</a></li> 
+                </ul> 
+               </div>   
+
+               </div>
+         </div> 
+ 
+</div>
+
+
+</div>
+</div>
+
+ 
+
+<!--大叻火鍋--> 
+<div data-role="page" id="p3b">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#p3" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到美食推薦</a>
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+
+        <h1>大叻火鍋</h1>
+       </div> 
+
+       <div id="p4pp">
+         
+        <main>
+           <div role="main" class="ui-content">
+        <div id="w">
+            <blockquote>
+            <img src="im/90.jpg"> 
+            <br>
+            <img src=""><br>
+            <img src="">
+            大叻到處都是鍋，舉凡雞肉鍋、豬肉鍋、羊肉爐和牛肉鍋何其多，最簡單的方式就是問在地人，最直接的方式就問飯店櫃台或店家！提到牛肉鍋Lẩu bò，幾乎都是指向這家人氣超夯的Lẩu bò Quán Gỗ。            </br>
+            </br>
+            <img src="im/91.jpg"><br>
+            <img src=""><br>
+            大叻人之所以喜愛吃火鍋美食的原因，在於他們位處於高原上，一年四季白日天氣涼爽，夜晚溫度會驟降。
+           
+            <br>
+           
+            
+     
+        </br>
+              </br>
+             <br> <img src="">
+              <img src="">
+              
+              <br> 
+              <img src="">
+            
+                </div>
+            </br>
+              </br>
+
+                
+                                      
+                           
+           
+           </blockquote> 
+   
+
+      <div role="main" class="ui-content">          
+       <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
+           <div data-role="navbar"> 
+                <ul> 
+                 <li><a href="#p3a" data-icon="arrow-l"data-icon="custom">越式法國麵包</a></li> 
+                
+                 <li><a href="#p3c" data-icon="arrow-r"data-icon="custom">牛肉河粉</a></li> 
                 </ul> 
                </div>   
 
@@ -1268,28 +1603,164 @@ main {
 </div>
 
 
+<!--河粉--> 
+<div data-role="page" id="p3c">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a href="#p3" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到美食推薦</a>
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+
+        <h1>牛肉河粉</h1>
+       </div> 
+
+       <div id="p5pp">
+         
+        <main>
+           <div role="main" class="ui-content">
+        <div id="w">
+            <blockquote>
+            <img src="im/20180630_124026840_iOS.jpg"> 
+            <br>
+            <img src=""><br>
+            <img src="">
+            大叻到處都是鍋，舉凡雞肉鍋、豬肉鍋、羊肉爐和牛肉鍋何其多，最簡單的方式就是問在地人，最直接的方式就問飯店櫃台或店家！提到牛肉鍋Lẩu bò，幾乎都是指向這家人氣超夯的Lẩu bò Quán Gỗ。            </br>
+            </br>
+            <img src="im/95.jpg"><br>
+            <img src=""><br>
+            大叻人之所以喜愛吃火鍋美食的原因，在於他們位處於高原上，一年四季白日天氣涼爽，夜晚溫度會驟降。
+           
+            <br>
+           
+            
+     
+        </br>
+              </br>
+             <br> <img src="">
+              <img src="">
+              
+              <br> 
+              <img src="">
+            
+                </div>
+            </br>
+              </br>
+
+                
+                                      
+                           
+           
+           </blockquote> 
+   
+
+      <div role="main" class="ui-content">          
+       <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
+           <div data-role="navbar"> 
+                <ul> 
+                 <li><a href="#p3b" data-icon="arrow-l"data-icon="custom">大叻火鍋</a></li> 
+                
+                 <li><a href="#p3a" data-icon="arrow-r"data-icon="custom">越式法國麵包</a></li> 
+                </ul> 
+               </div>   
+
+               </div>
+         </div> 
+           </div>
+           </div> 
+           
+</div>
+
+
+</div>
+</div>
+
+
+<!--影片--> 
+<div data-role="page" id="p4">
+    
+    <div data-role="panel" id="myPanel">
+        <h2>目錄</h2>
+        <ul data-role="listview">
+            
+            <li data-icon="false"><a href="#home">回首頁</a></li>
+            <li data-role="list-divider">大叻旅遊之相關資訊</li>
+            <li data-icon="false"><a href="#p1">大叻簡介</a></li>
+            <li data-icon="false"><a href="#p1">旅遊最佳時間</a></li>
+          
+            <li data-icon="false"><a href="#Map">交通與住宿推薦</a></li>
+            <li data-icon="false"><a href="https://www.accuweather.com/zh/vn/da-lat/354287/current-weather/354287">大叻當地氣候</a></li>
+            <li data-role="list-divider">大叻好吃又好玩</li>
+            <li data-icon="false"><a href="#p2">當地知名景點推薦</a></li>
+            <li data-icon="false"><a href="#p3">當地知名美食推薦</a></li>
+            
+            <li data-role="list-divider">其他</li>
+           
+            <li data-icon="false"><a href="#p4">影片介紹</a></li>
+            <li data-icon="false"><a href="#p5">關於我們</a></li>
+        </ul>
+    </div>
+
+    <script>
+        $("#pageone").on("swiperight",function(){
+        
+            $("#myPanel").panel("open");
+        });
+    </script>
+
+
+<!--影片內容-->  
+  
+<div id="yt" style="background:url(im/2.jpg) 50% 0 repeat;background-size:cover">
+      
+
+    <div data-role="header">
+       
+        <h1>影片介紹</h1>
+        
+    <a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>   
+  
+</div>
+
+
+<div data-role="main" class="ui-content"> 
+    <div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/w5oZU3ZqDVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+</div>
+</div>
+</div>
+</div>
 
 
 
 
+ 
+<!--關於-->
+      
+
+ 
+
+  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+        
+      
+  
+</div>
+<div data-role="page" data-dialog="true" id="p5">
+    <div data-role="header">
+      <h1>關於我們</h1>
+    </div>
+  ​
+    <div data-role="main" class="ui-content">
+      <p>謝謝!!!!!!!!!!!!!!!!!!</p>
+      <a href="#home">回主頁面</a>
+    </div>
+  ​
+    <div data-role="footer">
+      <h1>1108211022</h1>
+    </div>
+  </div> 
+  ​
 
 </body>
 
