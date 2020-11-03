@@ -21,8 +21,12 @@
     <title>越南景點介紹</title>
 
     <script type=”text/javascript” src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-    <link rel=”stylesheet” type=”text/css” href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-    <link rel=”stylesheet” type=”text/css” href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type=”text/css” href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type=”text/css” href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="themes/ruby.css">                       
+    <link rel="stylesheet" href="themes/ruby.min.css">
 
 
 <style>
@@ -210,6 +214,19 @@ main {
         background-position: center;
         background-size: cover;}
 
+
+
+
+
+
+
+.ui-body-c, .ui-header {
+        font-family: 'Noto Sans TC', sans-serif;
+}
+.ui-footer {
+        font-family: 'Pacifico', cursive;
+}
+
  </style>
 
 </head>
@@ -293,8 +310,8 @@ main {
             <li data-icon="false"><a href="#home">回首頁</a></li>
             <li data-role="list-divider">大叻旅遊之相關資訊</li>
             
-            <li data-icon="false"><a href="#Map">交通方式</a></li>
-            <li data-icon="false"><a href="#Map">住宿推薦</a></li>
+           
+            <li data-icon="false"><a href="#Map">交通與住宿</a></li>
             <li data-icon="false"><a href="https://www.accuweather.com/zh/vn/da-lat/354287/current-weather/354287">大叻當地氣候</a></li>
             <li data-role="list-divider">亚洲</li>
             <li data-icon="false"><a href="#">當地知名美食推薦</a></li>
@@ -554,14 +571,14 @@ main {
             <li data-role="list-divider">大叻旅遊之相關資訊</li>
             <li data-icon="false"><a href="#p1">大叻簡介</a></li>
             <li data-icon="false"><a href="#p1">旅遊最佳時間</a></li>
-            <li data-icon="false"><a href="#Map">交通方式</a></li>
-            <li data-icon="false"><a href="#Map">住宿推薦</a></li>
+          
+            <li data-icon="false"><a href="#Map">交通與住宿推薦</a></li>
             <li data-icon="false"><a href="https://www.accuweather.com/zh/vn/da-lat/354287/current-weather/354287">大叻當地氣候</a></li>
-            <li data-role="list-divider">旅遊景點推薦</li>
+            <li data-role="list-divider">當地知名美食推薦</li>
             <li data-icon="false"><a href="#">當地知名美食推薦</a></li>
             
             <li data-role="list-divider">子</li>
-            <li data-icon="false"><a href="#">當地文化介紹</a></li>
+           
             <li data-icon="false"><a href="#">影片介紹</a></li>
             <li data-icon="false"><a href="#">關於我們</a></li>
         </ul>
@@ -569,18 +586,19 @@ main {
 
     <script>
         $("#pageone").on("swiperight",function(){
-            //向右滑动，显示面板
+        
             $("#myPanel").panel("open");
         });
     </script>
     
 <!--旅遊-->  
-  
+ 
     <div id="p2">
       
 
         <div data-role="header">
            
+                
             <h1>旅遊景點推薦</h1>          
         <a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>   
       
@@ -607,10 +625,15 @@ main {
 </div>
 
 <!--瘋狂屋--> 
+
 <div data-role="page" id="a1">
          <div data-role="header" data-position="fixed" data-tap-toggle="false">
+            <div data-role="header">
+                <a href="#p2" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到必去景點</a>
+                <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
              <h1>瘋狂屋</h1>
-            </div> 
+        </div>
+         </div>    
 
             <div id="a1pp">
               
