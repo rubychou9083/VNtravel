@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+   
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+   
+    <title>越南景點介紹</title>
+
+    <script type=”text/javascript” src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type=”text/css” href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type=”text/css” href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="themes/ruby.css">                       
+    <link rel="stylesheet" href="themes/ruby.min.css">
+
+
+<style>
+    #home img{
+        max-width: 100%;
+        
+    }
+
+    #bg{
+        background-image:url(im/2.jpg);
+        max-width: 100%;
+    }
+
+    #p1{
+        background-image: url(im/4.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    #p1 img{
+
+        max-width: 100%;
+
+    }
+    
+   #pp {
+        background: url(im/13.jpg)0 / cover fixed ;
+        background-repeat: no-repeat;  
+        background-position: center;
+        background-size: cover;
+}
+
+main {
+  
+  background: hsla(0,0%,100%,.8);  
+}
+
+#w{
+    color: #000000;
+}
+
+
+#map img{
+    max-width: 100%;
+}
+
+
+#Map
+{
+    background-image: url(im/S__21348357.jpg);
+    background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+}
+
+
+#pp1 {
+        background: url(im/34.jpg)0 / cover fixed ;
+        background-repeat: no-repeat;  
+        background-position: center;
+        background-size: cover;
+}
+
+
+#p2 {
+
+        background-image: url(im/35.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+
+}
+
+
+
+#a1 img{
+    max-width: 100%;
+
+}
+
+#a1pp {
+    background-image: url(im/13.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+}
+
+#a2 img{
+    max-width: 100%;
+
+}
+
+#a2pp {
+    background-image: url(im/45.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+}
+
+#a3pp {
+    background-image: url(im/47.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+}
+#a3 img{
+    max-width: 100%;
+
+}
+
+#a4pp {
+    background-image: url(im/55.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+}
+
+#a4 img{
+    max-width: 100%;
+
+}
+#a5 img{
+    max-width: 100%;
+
+}
+#a6 img{
+    max-width: 100%;
+
+}
+#a6pp {
+    background-image: url(im/61.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+}
+#a7 img{
+    max-width: 100%;
+
+}
+#a7pp {
+    background-image: url(im/68.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;}
+
+#a8 img{
+    max-width: 100%;
+
+}
+#a8pp {
+    background-image: url(im/71.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;}
+#a9 img{
+    max-width: 100%;
+
+}
+#a9pp {
+    background-image: url(im/4.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;}
+#a10 img{
+    max-width: 100%;
+
+}
+#a10pp {
+    background-image: url(im/78.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;}
+
+
+
+
+
+
+
+.ui-body-c, .ui-header {
+        font-family: 'Noto Sans TC', sans-serif;
+}
+.ui-footer {
+        font-family: 'Pacifico', cursive;
+}
+
+ </style>
+
+</head>
+
+
+
+
+
+<body>
+<!-- 首頁 -->
+    <div data-role="page" id="home">
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+
+            <h1>越南旅遊景點介紹</h1>
+
+        </div>
+<div id="bg">
+<div role="main" class="ui-content">    
+  
+
+    <h1>越南避暑勝地Da Lat</h1>
+     <img src="im/line_2261432967594.jpg">             
+            <ul data-role="listview" data-inset="true">
+            
+                <li><a href="#p1">
+                <img src="im/clouds-and-sun.png">
+                <h2>大叻旅遊之相關資訊</h2>
+                <p>大叻地處1500米，山上空氣涼爽，一天中的春夏秋冬。</p>
+                </a></li>
+            
+            
+                <li><a href="#p2">
+                <img src="im/placeholder (4).png">
+                <h2>旅遊景點推薦</h2>
+                <p>Hot Chip</p></a>
+                </li>
+            
+            
+                <li><a href="#">
+                    <img src="im/eating.png">
+                <h2>當地知名美食推薦</h2>
+                <p>Phoenix</p></a>
+                </li>
+              
+                <li><a href="#">
+                    <img src="im/youtube.png">
+                <h2>影片介紹</h2>
+                <p>Phoenix</p></a>
+                </li>
+
+                <li><a href="#">
+                    <img src="im/search.png">
+                <h2>關於我們</h2>
+                <p>Phoenix</p></a>
+                </li>
+            </ul>
+
+          
+        
+       
+        <div data-role="footer" data-position="fixed">
+
+            <h4>chou&copy;ruby0960113068@gmail.com</h4>
+
+        </div><!-- /footer -->
+
+    </div> 
+
+</div>
+    </div>
+
+<!--天氣-->
+<!--天氣側目路-->
+<div data-role="page" id="p1">
+    
+    <div data-role="panel" id="myPanel">
+        <h2>目錄</h2>
+        <ul data-role="listview">
+            
+            <li data-icon="false"><a href="#home">回首頁</a></li>
+            <li data-role="list-divider">大叻旅遊之相關資訊</li>
+            
+           
+            <li data-icon="false"><a href="#Map">交通與住宿</a></li>
+            <li data-icon="false"><a href="https://www.accuweather.com/zh/vn/da-lat/354287/current-weather/354287">大叻當地氣候</a></li>
+            <li data-role="list-divider">亚洲</li>
+            <li data-icon="false"><a href="#">當地知名美食推薦</a></li>
+            
+            <li data-role="list-divider">子</li>
+            <li data-icon="false"><a href="#">當地文化介紹</a></li>
+            <li data-icon="false"><a href="#">影片介紹</a></li>
+            <li data-icon="false"><a href="#">關於我們</a></li>
+        </ul>
+    </div>
+
+    <script>
+        $("#pageone").on("swiperight",function(){
+            //向右滑动，显示面板
+            $("#myPanel").panel("open");
+        });
+    </script>
+    
+  <!--天氣內容-->  
+  
+    <div id="p1">
+      
+
+        <div data-role="header">
+           
+            <h1>大叻旅遊之相關資訊</h1>
+            
+                <img src="im/6.jpg">
+                   
+        <a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>   
+      
+    </div>
+ 
+
+    <div data-role="main" class="ui-content"> 
+                                                   
+    <div data-role="main" class="ui-content"> 
+        <div data-role="collapsible" >
+            <h5 ><center>大叻簡介</center></h5>
+            <div id="pp">
+              
+                <main>
+                   
+                <div id="w">
+                    <img src="im/10.jpg"> <br><blockquote>
+                    大叻市（Thành phốĐàLạt）是越南林同省省會，位於中部林園高原，平均氣溫約為17℃，最熱的季節不超過25℃。大叻市在阮朝時仍處於部落統治時代。該地被稱作Lang Bian高原（另有Langbiang多種拼寫方式），後越南語化為林園高原，又稱作大叻高原，是西原高原的組成部分。1893年，著名的細菌學家 亞歷山大 · 耶爾 森來到林園高原探險。1897年，耶爾森請求法屬印度支那總督保羅在這裡興建高山避暑勝地。這一建議得到了總督的認可。此後，法國殖民政府逐漸開發大叻。 法國人離開後在大叻留下了很多歐式的建築，花園，教堂隨處可見，著名的春香湖也是法國人開鑿出來的人工湖。
+                        <img src="im/27.jpg"> <br>
+                        位於越南中部高原南部是一個充滿歐式風情的小城市氣候宜人，盛產蔬果及花卉，相傳是古代越南國王的避暑勝地，現在是越南的旅遊熱點，因為大叻市不大，適合安排一日遊~
+                  
+                </div>
+                </blockquote> 
+            </br>
+            </main>
+             </div>    
+             </div>
+
+             
+                <div data-role="collapsible" >
+                    <h5 ><center>旅遊最佳時間</center></h5>
+                    <div id="pp">
+                      
+                        <main>
+                           
+                        <div id="w">
+                            <img src="im/14.jpg"> <br>
+                            <blockquote>5月到10月的大叻是雨季，如果你真的不喜歡下雨，最好避開這幾個月。每年1月1日到4日大叻會舉辦花展，這時候是大叻最美麗的時刻。因此大叻旅行的最佳時間是從10月到第二年的4月份，尤其是1月到3月春暖花開的時節。大叻白天與晚上溫差較大，如果遇到下雨則很涼，白天25°C的天晚上隨時可以降到10°C左右，因此如果你打算去大叻呆上幾天，一定記得備多一件薄外套。最後需要提醒大家的是，9月2日是 越南 的國慶日，越南會有個三天的小假期，屆時 越南 國內會有非常多的當地人去大叻度假，酒店價格上漲不說，還基本爆滿。所以建議國內的朋友最好避開這個時間去大叻 。
+                                <br>
+                            (此圖為當地著名Flower Park)    
+                            </br>
+                        </div>
+                        </blockquote> 
+                    </br>
+                    </main>
+                     </div>  
+  
+         </div>  
+       
+
+<a href="#Map" class="ui-btn ui-btn-icon-left ui-btn ui-icon-bars" data-transition="slide">交通與住宿</a> 
+
+                
+   
+
+ 
+  
+                
+        
+           
+
+      
+
+
+
+
+
+
+
+
+         
+                  
+         
+
+<!-- /氣候 -->
+           <div data-role="controlgroup" class="ui-content">
+            <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-icon-bars ui-btn-icon-left">大叻當地氣候</a>
+        
+            <div data-role="popup" id="myPopupDialog">
+              <div data-role="header" >
+                <h1>氣候資訊</h1>
+
+              </div>
+        
+              <div data-role="main" class="ui-content">
+                <h2>前往AccuWeathe</h2>
+                <p>是否跳出此畫面</p>
+               
+
+            <a href="#p1" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" >否</a>
+            <a href="https://www.accuweather.com/zh/vn/da-lat/354287/current-weather/354287" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-btn-icon-left">是</a>
+
+ 
+</div>
+ 
+</div>
+</div>
+</div>
+</div>
+    </div>
+</div>
+
+<!--交通與住宿-->
+<div data-role="page" id="Map">
+
+    <div data-role="header">
+        <a href="#p1" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">返回</a>
+        <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+        <h1>交通與住宿</h1>
+
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+       
+      
+        <div id="map"></a>
+          <div role="main" class="ui-content">    
+  
+
+           <h1>大叻交通住宿資訊</h1>
+           <div data-role="controlgroup" class="ui-content">
+ 
+                    <ul data-role="listview"data-inset="true" >
+                        
+                        <li><a href="https://www.newamazing.com.tw/eweb_newamazing/vietnam/nhatrang/dalat.asp">
+                        <img src="im/reservation.png">
+                        <h2>線上查詢懶人包</h2>
+                        <p>前往預約、線上價格查詢、各大熱門景點票價....</p>
+                        </a></li>
+                    </ul>
+                   
+                    
+
+                        <div data-role="collapsible" >
+                            <h5 ><center>交通方式</center></h5>
+                            <div id="pp1">
+                              
+                                <main>
+                                   
+                                <div id="w">
+                                    <br>
+                                <h2><center>機場到市區交通</center></h2>
+                            </br>
+                                    <img src="im/23.jpg"> <br>
+                                    <blockquote>大叻機場目前班機不多，機場本身也沒有太多周邊服務，最明確的就是機場到市區的交通服務台，所以班機抵達後下飛機一走入航站就可看到一個服務台，分左右二邊，一邊是機場巴士、一邊是計程車服務；
+                                        <br>
+                                   
+                                    </br>
+                                </div>
+                                </blockquote> 
+                            </br>
+                            </main>
+                             </div>  
+
+                             <div data-role="collapsible" >
+                                <h5 ><center>臥鋪巴士</center></h5>
+                                <div id="pp1">
+                                  
+                                    <main>
+                                       
+                                    <div id="w">
+                                        <img src="im/22.jpg"> 
+                                        <blockquote>從越南胡志明市到「大叻」除了坐飛機，大多數民眾會選擇搭乘長途巴士，然而平均約7至8小時的車程，讓旅客光是交通就花上一整天的時間，其實，來往胡志明市與「大叻」巴士班次相當密集，大家不妨選擇夜間時段的「通宵巴士」！ </blockquote> 
+                                        <img src="im/25.jpg"> 
+                                    </div>
+                                    <blockquote>臥鋪還算舒服，身高１７０腳都還能伸直，下鋪明顯比上鋪穩，睡上鋪太可怕了~畢竟前往大叻多為山路，因此路會較顛簸，司機駕駛上真的非常看技術，我去程是傍晚時間，車量非常多，司機沿路狂按喇叭，一路狂飆，也許不想誤點吧~這整個路途上，都會有停靠點，載其他旅客，陸陸續續都會有遊客上來。司機根本就是用高速公路的時速來開九彎十八拐的道路集山路。相當可怕，整晚都睡不好，司機一下左彎，一下右彎，提心吊膽的夜晚。
+                                         </blockquote> 
+                                         <img src="im/26.jpg">
+                                         <blockquote>
+                                         上車後會每人發一瓶水和濕紙巾，還有鞋套，拖完鞋才能進巴士，每車也都有一位的隨車人員，至少能確保司機在路途中的精神狀況，不至於打瞌睡！中途會有休息站讓大家吃飯，下車不用麻煩還要再穿鞋子，隨車人員會提供拖鞋讓大家穿下去。中途休息站的售價都會比一般市區貴。
+                                    </blockquote>
+                                    <img src="im/24.jpg">
+                                   
+                                    <blockquote>
+                                       
+                                        抵達大叻大概是凌晨三四點，司機停在郊區，相當的冷，他們會安排九人座的車子載大家去各自的旅店。<br>(上圖為清晨六點拍的美景，只能先放行李，中間這段時間一路在安靜的大叻街頭徘徊著)</br>
+                                    
+                                   </blockquote>
+                                </main>
+                                 </div> 
+                                 </div> 
+                            
+</div>
+</div>
+                                <div data-role="collapsible" >
+                                    <h5 ><center>住宿推薦</center></h5>
+                                    <div id="pp1">
+                                    
+                                        <main>
+                                        
+                                        <div id="w">
+                                            <img src="im/30.jpg"> 
+                                            <blockquote>大叻市場算是大叻的市中心，其周邊是背包客集中地，合宿型(Hostel)、以民宿為主，價格都不高；特色是便利：新咖啡巴士營運點在附近、可以租機車、可以逛街、夜晚有咖啡廳、小酒吧；如果你喜歡採Walk in的方式可以在這裡慢慢選擇。 </blockquote> 
+                                            <div data-role="main" class="ui-content">
+                                                <div data-role="controlgroup" data-type="vertical">
+                                                  
+                                         <center> <a href="https://www.booking.com/landmark/vn/lam-vien-square.zh-tw.html?aid=318615;label=New_Chinese_Traditional_ZH-XT_24509419345-liovB6A8r8chJeHBdsZVaAS230871981790:pl:ta:p1:p2:ac:ap:neg:fi:tidsa-64415617705:lp9040321:li:dec:dm;ws=&gclid=Cj0KCQjwlvT8BRDeARIsAACRFiW-_BUnEKHeFmgW454J9YjarZZv3VE5G5h3aLxrgBge5qVIDtI1QJMaAkk4EALw_wcB" class="ui-btn">booking.com</a></center>
+
+
+
+                                          
+                                        </div>
+                                            </br>
+                                        </div>
+                                        </blockquote> 
+                                    </br>
+                                    </main>
+                                     </div>
+
+                </div>
+                </div><!-- /content -->
+
+            
+
+            </div><!-- /page -->
+
+            </div>
+            </div>
+
+
+<!--旅遊景點推薦-->
+<div data-role="page" id="p2">
+    
+    <div data-role="panel" id="myPanel">
+        <h2>目錄</h2>
+        <ul data-role="listview">
+            
+            <li data-icon="false"><a href="#home">回首頁</a></li>
+            <li data-role="list-divider">大叻旅遊之相關資訊</li>
+            <li data-icon="false"><a href="#p1">大叻簡介</a></li>
+            <li data-icon="false"><a href="#p1">旅遊最佳時間</a></li>
+          
+            <li data-icon="false"><a href="#Map">交通與住宿推薦</a></li>
+            <li data-icon="false"><a href="https://www.accuweather.com/zh/vn/da-lat/354287/current-weather/354287">大叻當地氣候</a></li>
+            <li data-role="list-divider">當地知名美食推薦</li>
+            <li data-icon="false"><a href="#">當地知名美食推薦</a></li>
+            
+            <li data-role="list-divider">子</li>
+           
+            <li data-icon="false"><a href="#">影片介紹</a></li>
+            <li data-icon="false"><a href="#">關於我們</a></li>
+        </ul>
+    </div>
+
+    <script>
+        $("#pageone").on("swiperight",function(){
+        
+            $("#myPanel").panel("open");
+        });
+    </script>
+    
+<!--旅遊-->  
+ 
+    <div id="p2">
+      
+
+        <div data-role="header">
+           
+                
+            <h1>旅遊景點推薦</h1>          
+        <a href="#myPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>   
+      
+    </div>
+
+        <div role="main" class="ui-content">    
+
+            <h1>必去景點</h1>     
+            <a href="#a1" class="ui-btn ui-btn-icon-left ui-btn ui-icon-location" data-transition="slide">瘋狂屋</a> 
+            <a href="#a2" class="ui-btn ui-btn-icon-left ui-btn ui-icon-location" data-transition="slide">大叻火車站</a> 
+            <a href="#a3" class="ui-btn ui-btn-icon-left ui-btn ui-icon-location" data-transition="slide">Me Linh Coffee Garden</a> 
+            <a href="#a4" class="ui-btn ui-btn-icon-left ui-btn ui-icon-location" data-transition="slide">春香湖</a> 
+            <a href="#a5" class="ui-btn ui-btn-icon-left ui-btn ui-icon-location" data-transition="slide">大象瀑布</a> 
+            <a href="#a6" class="ui-btn ui-btn-icon-left ui-btn ui-icon-location" data-transition="slide">Garnet Cellar酒莊</a>
+            <a href="#a7" class="ui-btn ui-btn-icon-left ui-btn ui-icon-location" data-transition="slide">Stairway To Heaven</a>
+            <a href="#a8" class="ui-btn ui-btn-icon-left ui-btn ui-icon-location" data-transition="slide">Tunnel Clay泥雕公園</a>
+            <a href="#a9" class="ui-btn ui-btn-icon-left ui-btn ui-icon-location" data-transition="slide">浪平山</a>
+            <a href="#a10" class="ui-btn ui-btn-icon-left ui-btn ui-icon-location" data-transition="slide">大叻花园</a>
+           
+            </div> 
+           
+            </div>
+</div>  
+</div>
+
+<!--瘋狂屋--> 
+
+<div data-role="page" id="a1">
+         <div data-role="header" data-position="fixed" data-tap-toggle="false">
+            <div data-role="header">
+                <a href="#p2" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-notext ui-btn-icon-left">回到必去景點</a>
+                <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">主頁</a>
+             <h1>瘋狂屋</h1>
+        </div>
+         </div>    
+
+            <div id="a1pp">
+              
+                <main>
+                   <div role="main" class="ui-content">
+                <div id="w">
+                    <blockquote>
+                        <img src="im/41.jpg"> <br>
+                        <img src=""> 
+                    
+                        這其實是間飯店，約有10間房，白天與夜晚有著不同的氣氛！白天是新奇探索；晚上則是陰森詭異
+        
+                        瘋狂屋被評為『世界十大怪奇建築』，有多特別呢? 讓你穿梭在這迷宮般的建築讓人找不到路，重點處處都是驚喜呢！
+                        順著藤蔓階梯越爬越高，還能俯瞰瘋狂屋呢！不要覺得這只是一個建築能有多厲害?
+                        它確實就是一個非常用心及讓人驚艷難忘的景點，千萬不能錯過這裡！                
+                    </br>
+
+                    
+                        <img src="im/42.jpg"> <br>
+                       
+               
+                        瘋狂屋設計師NGA是 越南前總統TRUONG CHINH的女兒，瘋狂屋最初的設計功能是酒店，但因為其設計非常獨特，因此大多遊客都以為好奇而慕名前來參觀，基本上是沒人住店的。慢慢的形成了現在大叻最具代表的標誌性建築。
+                     <img src=""> <br>
+                                           
+                        <img src="im/43.jpg"> <br>
+                        瘋狂屋也稱作恆娥別墅Hằng Nga guesthouse，
+                        至今還在不斷的增建中，很有高地的天馬行空風格～             
+                </br>
+                </blockquote> 
+        
+
+           <div role="main" class="ui-content">          
+            <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
+                <div data-role="navbar"> 
+                     <ul> 
+                      <li><a href="#a11" data-icon="custom">Garnet Cellar酒莊</a></li> 
+                      <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
+                      <li><a href="#a2" data-icon="custom">大叻火車站</a></li> 
+                     </ul> 
+                    </div>   
+
+                    </div>
+              </div> 
+      
+ </div>
+</div>
+</main>
+</div>
+</div>
+
+
+
+
+<!--大叻火車站--> 
+<div data-role="page" id="a2">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1>大叻火車站</h1>
+       </div> 
+
+       <div id="a2pp">
+         
+           <main>
+              <div role="main" class="ui-content">
+           <div id="w">
+               <blockquote>
+               <img src="im/10.jpg"> <br>
+               <img src=""> 
+               
+               大叻站是越南大塔鐵路的一個火車站，服務於林同省大叻市。
+               它是由法國建築師Moncet和Reveron設計於1932年，並於1938年開業。
+               此後僅數年就由於戰爭而長期遭廢棄，直到1990年代，
+               才恢復了通往附近村莊Trai Mat的7公里長的旅遊線路。
+               大叻火車站擁有獨特的建築風格，整體而言為裝飾藝術風格，
+               和法國的特魯維勒-多維勒站風格相似，
+               同時又結合了本土的越南中部高地的建築元素。        
+               
+               </br>
+               <br>
+               <img src=""> 
+                   <img src="im/44.jpg"><br>
+                   大叻火車站是大叻的標誌性建築之一。鐵路線總長8公里，目前僅作為觀光客服務，經過大叻山區，到達山間的一個小村落參觀靈福寶塔，每天往返五班。觀光火車價格外國遊客價格為124.000VND/人，車站參觀費用為5.000VND/人
+
+                 </br>
+                </br>                 
+                           
+           
+           </blockquote> 
+   
+
+      <div role="main" class="ui-content">          
+       <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
+           <div data-role="navbar"> 
+                <ul> 
+                 <li><a href="#a1" data-icon="custom">瘋狂屋</a></li> 
+                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
+                 <li><a href="#a3" data-icon="custom">Me Linh Coffee Garden</a></li> 
+                </ul> 
+               </div>   
+
+               </div>
+         </div> 
+ 
+</div>
+</div>
+</div>
+</div>
+
+
+<!--咖啡豆花園--> 
+<div data-role="page" id="a3">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1>Me Linh Coffee Garden</h1>
+       </div> 
+
+       <div id="a3pp">
+         
+        <main>
+           <div role="main" class="ui-content">
+        <div id="w">
+            <blockquote>
+            <img src="im/46.jpg"> 
+            <br>
+            <img src=""><br>
+            <img src="">
+            Me Linh Coffee Garden設計為開放式，可確保完整的360度視野，
+            在MeLinh咖啡花園的山腳下，是一座小型咖啡農場，位於Tanung大壩前面。       
+            </br>
+            </br>
+            <img src="im/48.jpg"><br>
+            <img src=""><br>
+            Me Linh Coffee Garden設計為開放式，可確保完整的360度視野，
+            在MeLinh咖啡花園的山腳下，是一座小型咖啡農場，位於Tanung大壩前面。         
+        </br>
+              </br>
+             <br> <img src="">
+              <img src="">
+              
+              <br> 
+              <img src="">
+            
+                </div>
+            </br>
+              </br>
+
+                
+                                      
+                           
+           
+           </blockquote> 
+   
+
+      <div role="main" class="ui-content">          
+       <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
+           <div data-role="navbar"> 
+                <ul> 
+                 <li><a href="#a2" data-icon="custom">大叻火車站</a></li> 
+                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
+                 <li><a href="#a4" data-icon="custom">春香湖</a></li> 
+                </ul> 
+               </div>   
+
+               </div>
+         </div> 
+ 
+</div>
+
+
+</div>
+</div>
+
+ <!--春香胡--> 
+<div data-role="page" id="a4">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1>春香胡</h1>
+       </div> 
+
+<div id="a4pp">
+         
+           <main>
+              <div role="main" class="ui-content">
+           <div id="w">
+               <blockquote>
+               <img src="im/50.jpg"> <br>
+              
+               
+               春香湖是越南大叻市中心的一座人工湖，開挖於20世紀的法國殖民時代，湖面面積有5平方公里，非常的廣闊
+
+               在湖的另一個是純樸又繁榮的市區，另一側則是寧靜悠閒的自然景色，兩側不同風情的景象，讓坐在湖畔草皮上的我們享受其中        
+               
+               </br>
+               <br>
+               <img src="im/54.jpg"> <br>
+              
+               
+               香湖的名稱有兩種說法：一是在春天，湖四周的花草樹木散發出香味，所以稱為春香湖。另一說是以19世紀越南女詩人胡春香命名，是從1953年命名之，旨在重現這位浪漫詩人的形象，貼合此處的景色。       
+               
+               </br>
+               </blockquote>
+               </div>
+              
+              
+               <div data-role="collapsible" >
+                <h5 ><center>Da Lat Lam Vien Square 廣場</center></h5>
+                <div id="pp4">
+                  
+                    <main>
+                       
+                    <div id="w">
+                        <img src="im/52.jpg"> 
+                        <blockquote> 來到大叻市區春香湖畔旁的Da Lat Lam Vien Square上，都會看見這兩座醒目的建築在廣場下面是Big C大型購物中心和一個小商場，許多居民和遊客都喜歡聚集在廣場上拍照
+                            看著這個碩大的黃綠交錯造型建築，像是菠蘿麵包！
+                         </blockquote> 
+                       </div>
+                        
+                    </div>
+               
+                   <img src="im/51.jpg"><br> 
+                   <blockquote> 
+                  非常舒服的天氣，令人想待上一整個下午，看著小孩嬉戲，聽那不遠處傳來的歌聲，聞著小餐車的麵包香
+                  </blockquote> </br>
+                  <img src="im/56.png"><br>         
+                 
+                    
+</div>
+        
+
+
+
+      <div role="main" class="ui-content">          
+       <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
+           <div data-role="navbar"> 
+                <ul> 
+                 <li><a href="#a3" data-icon="custom">Me Linh Coffee Garden</a></li> 
+                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
+                 <li><a href="#a5" data-icon="custom">大象瀑布</a></li> 
+                </ul> 
+               </div>   
+
+               </div>
+         </div> 
+      
+</div>
+</div>
+</div>
+
+    
+ 
+
+<!--達坦拉瀑布--> 
+<div data-role="page" id="a5">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1>大象瀑布</h1>
+       </div> 
+
+       <div id="a5pp">
+         
+        <main>
+           <div role="main" class="ui-content">
+        <div id="w">
+            <blockquote>
+            <img src="im/56.jpg"> 
+            <br>
+            <img src=""><br>
+            <img src="">
+            大叻的郊區最遠就是到這個「大象瀑布」thac vol，路上沒有路標，也不是很好找，所以只看到一些外國摩托車跟本地人來到這，門票VND.1萬，雖然不是磅礴的大瀑布，但人煙稀少，在瀑布底下坐著吸收負離子，一股沁涼通體舒暢，清爽無比，但進去瀑布的路不是很好走就是了       
+            </br>
+            </br>
+            <img src="im/57.jpg"><br>
+            <img src=""><br>
+            大象瀑布是越南中部最大的瀑布，它高三十多米，寬四十米，水量充沛。那裡非常美麗，而且氣候濕潤陰涼。由於其位置偏遠，它的環境十分安靜清幽，遊人稀少。
+
+     
+        </br>
+              </br>
+             <br> <img src="">
+              <img src="">
+              
+              <br> 
+              <img src="">
+            
+                </div>
+            </br>
+              </br>
+
+                
+                                      
+                           
+           
+           </blockquote> 
+   
+
+      <div role="main" class="ui-content">          
+       <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
+           <div data-role="navbar"> 
+                <ul> 
+                 <li><a href="#a2" data-icon="custom">大叻火車站</a></li> 
+                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
+                 <li><a href="#a6" data-icon="custom">Garnet Cellar酒莊</a></li> 
+                </ul> 
+               </div>   
+
+               </div>
+         </div> 
+ 
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+<!--Garnet Cellar酒莊--> 
+<div data-role="page" id="a6">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1>Garnet Cellar酒莊</h1>
+       </div> 
+
+       <div id="a6pp">
+         
+        <main>
+           <div role="main" class="ui-content">
+        <div id="w">
+            <blockquote>
+            <img src="im/59.jpg"> 
+            <br>
+            <img src=""><br>
+            <img src="">
+            酒莊腹地是環繞著湖泊，淺灘處如果整理好一定很美。同樣打造花卉及拍照景點為主，目前是藍色小精靈和101忠狗。 
+            </br>
+            </br>
+            <img src="im/60.jpg"><br>
+            <img src=""><br>
+            最厲害的應該是酒窖，盡頭處放了二個橡木桶及許多乾淨的高腳杯，竟然是可以自己扭開水龍頭裝紅酒，兩位朋友喝了說有巧克力味，口感不酸不澀，後才才知道是「火龍果酒」，有機會可以來走走。
+
+     
+        </br>
+              </br>
+             <br> <img src="">
+              <img src="">
+              
+              <br> 
+              <img src="">
+            
+                </div>
+            </br>
+              </br>
+
+                
+                                      
+                           
+           
+           </blockquote> 
+   
+
+      <div role="main" class="ui-content">          
+       <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
+           <div data-role="navbar"> 
+                <ul> 
+                 <li><a href="#a5" data-icon="custom">大象瀑布</a></li> 
+                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
+                 <li><a href="#a7" data-icon="custom">Stairway To Heaven</a></li> 
+                </ul> 
+               </div>   
+
+               </div>
+         </div> 
+ 
+</div>
+
+
+</div>
+</div>
+
+<!--Stairway To Heaven--> 
+<div data-role="page" id="a7">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1>Stairway To Heaven</h1>
+       </div> 
+
+       <div id="a7pp">
+         
+        <main>
+           <div role="main" class="ui-content">
+        <div id="w">
+            <blockquote>
+            <img src="im/62.jpg"> 
+            <br>
+            <img src=""><br>
+            <img src="">
+            位於越南中部高山地區的大叻(Da Lat)，因歷史因素擁有許多浪漫法式建築，有「越版小巴黎」之稱，來到這一定會去的賞景地點Sunny Farm，現在在一旁多了一座超夢幻純白階梯「Stairway To Heaven」（天國的階梯），無限延伸的錯覺感，讓人就像在仙境般，特別有夢幻感。     
+            </br>
+            </br>
+           
+
+     
+        </br>
+              </br>
+             <br> <img src="">
+              <img src="">
+              
+              <br> 
+              <img src="">
+            
+                </div>
+            </br>
+              </br>
+
+                
+                                      
+                           
+           
+           </blockquote> 
+   
+
+      <div role="main" class="ui-content">          
+       <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
+           <div data-role="navbar"> 
+                <ul> 
+                 <li><a href="#a6" data-icon="custom">Garnet Cellar酒莊</a></li> 
+                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
+                 <li><a href="#a8" data-icon="custom">Tunnel Clay泥雕公園</a></li> 
+                </ul> 
+               </div>   
+
+               </div>
+         </div> 
+ 
+</div>
+
+
+</div>
+</div>
+
+<!--Tunnel Clay泥雕公園--> 
+<div data-role="page" id="a8">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1>Tunnel Clay泥雕公園</h1>
+       </div> 
+
+       <div id="a8pp">
+         
+        <main>
+           <div role="main" class="ui-content">
+        <div id="w">
+            <blockquote>
+            <img src="im/69.jpg"> 
+            <br>
+            <img src=""><br>
+            <img src="">
+            Tunnel Clay泥雕公園是大叻知名的景點之一，離市區稍遠些，大概需要40分鐘左右的車程，票價為全票60000VND(130公分以上)、半票30000VND(110-130公分)、免費(未滿110公分)。原因不外乎是以個人之力要打造整個Tunnel Clay需要耗費許多的時間及毅力，更何況是要將很不花俏的泥土表現出特色，想必相當困難。       
+            </br>
+            </br>
+            <img src="im/70.jpg"><br>
+            <img src=""><br>
+            整個園區充滿著用泥土所創作的裝置藝術，從許多的造型中可以發現很多設計都滿具有巧思的，其中最著名的創作就是在園區的尾端處有兩個大大的人像後面還長滿著植物，有種腦力激盪的感覺。
+           
+           
+
+     
+        </br>
+              </br>
+             <br> <img src="">
+              <img src="">
+              
+              <br> 
+              <img src="">
+            
+                </div>
+            </br>
+              </br>
+
+                
+                                      
+                           
+           
+           </blockquote> 
+   
+
+      <div role="main" class="ui-content">          
+       <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
+           <div data-role="navbar"> 
+                <ul> 
+                 <li><a href="#a7" data-icon="custom">Stairway To Heaven</a></li> 
+                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
+                 <li><a href="#a9" data-icon="custom">浪平山</a></li> 
+                </ul> 
+               </div>   
+
+               </div>
+         </div> 
+ 
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+<!--浪平山--> 
+<div data-role="page" id="a9">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1>浪平山</h1>
+       </div> 
+
+       <div id="a9pp">
+         
+        <main>
+           <div role="main" class="ui-content">
+        <div id="w">
+            <blockquote>
+            <img src="im/72.jpg"> 
+            <br>
+            <img src=""><br>
+            <img src="">
+            浪平山（Lang Bian Mountain）距離大叻市區僅12公里，這裡有著宜人的氣候，動植物資源十分豐富，可選擇乘坐吉普車或徒步前往山頂。沿途的原生態風光讓人心曠神怡，山頂的景色更為壯觀，可以將城市風光僅收眼底。
+            </br>
+            </br>
+            <img src="im/73.jpg"><br>
+            <img src=""><br>
+            上山搭乘吉普車，有專門櫃檯賣門票，當時是包車，一個人的車票是60K（來回兩趟），上路滿陡的，可以搭車，也可以徒步(約三小時)。山上也有咖啡廳跟賣熱食的，唯一缺點就是好冷，非常舒服的天氣，可以感受到大叻一天下來似乎，擁有著春夏秋冬的氣候，真是令人想待整個下午，發呆吹風。
+
+
+
+     
+        </br>
+              </br>
+             <br> <img src="">
+              <img src="">
+              
+              <br> 
+              <img src="">
+            
+                </div>
+            </br>
+              </br>
+
+                
+                                      
+                           
+           
+           </blockquote> 
+   
+
+      <div role="main" class="ui-content">          
+       <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
+           <div data-role="navbar"> 
+                <ul> 
+                 <li><a href="#a8" data-icon="custom">Tunnel Clay泥雕公園</a></li> 
+                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
+                 <li><a href="#a10" data-icon="custom">大叻花園</a></li> 
+                </ul> 
+               </div>   
+
+               </div>
+         </div> 
+ 
+</div>
+
+
+</div>
+</div>
+
+
+
+
+<!--大叻花園--> 
+<div data-role="page" id="a10">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1>大叻花園</h1>
+       </div> 
+
+       <div id="a10pp">
+         
+        <main>
+           <div role="main" class="ui-content">
+        <div id="w">
+            <blockquote>
+            <img src="im/77.jpg"> 
+            <br>
+            <img src=""><br>
+            <img src="">
+            園內種植着幾百種不同種類的花朵植物，如蝴蝶蘭，繡球花，玫瑰，紫羅蘭，含羞草和桃花等。有些花一年可以開放好幾次。所以無論在什麼季節，園區總有美麗的植物。當天我們中午時分到達花園，正是太陽最曬的時候，整個花園除了工作人員基本沒有遊客。     
+            </br>
+            </br>
+            <img src="im/76.jpg"><br>
+            <img src=""><br>
+            依山而建，遊客不是太多，這裡有各式叫不上名字的熱帶花卉，燦燦爛爛地灑滿一山坡，剛剛下完了雨，經過小雨的滋潤，各色花草更加嬌嫩，我們使勁兒呼吸着這新鮮的空氣，大叻城裡城外，隨處可以看到鮮花種植，花店。愛花人最好多去轉轉，會有不小收穫。門票4萬，（12人民幣）兒童半價。
+
+     
+        </br>
+              </br>
+             <br> <img src="">
+              <img src="">
+              
+              <br> 
+              <img src="">
+            
+                </div>
+            </br>
+              </br>
+
+                
+                                      
+                           
+           
+           </blockquote> 
+   
+
+      <div role="main" class="ui-content">          
+       <div data-role="footer" data-position="fixed" data-tap-toggle="false"> 
+           <div data-role="navbar"> 
+                <ul> 
+                 <li><a href="#a9" data-icon="custom">浪平山</a></li> 
+                 <li><a href="#p2" data-icon="custom">回到必去景點</a></li> 
+                 <li><a href="#a1" data-icon="custom">瘋狂屋</a></li> 
+                </ul> 
+               </div>   
+
+               </div>
+         </div> 
+ 
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
